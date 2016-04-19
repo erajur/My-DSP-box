@@ -40,6 +40,7 @@ public:
     virtual int viWriteSpi(s32 data, u32 address = 0) {return 0;}
 
     char cSpiGetc(u8 data);
+    char cSpiGetc(u8 data, const u8* buffer){};
     void vSpiGets(u8 *str, u8 length, u8 port);
 
 private:
